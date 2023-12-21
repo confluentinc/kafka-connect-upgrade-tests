@@ -58,13 +58,11 @@
       <groupId>io.confluent</groupId>
       <artifactId>connect-test-sdk-upgrade</artifactId>
       <version>0.1.0</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>connect-test-sdk-common</artifactId>
       <version>0.1.0</version>
-      <scope>test</scope>
     </dependency>
 
     <dependency>
