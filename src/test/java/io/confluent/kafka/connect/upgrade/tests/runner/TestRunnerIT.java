@@ -5,7 +5,7 @@
 package io.confluent.kafka.connect.upgrade.tests.runner;
 
 
-import io.confluent.connect.test.framework.upgrade.runner.UpgradeTestRunnerIT;
+import io.confluent.connect.test.sdk.upgrade.runner.UpgradeTestRunnerIT;
 
 import org.apache.kafka.test.IntegrationTest;
 import org.junit.experimental.categories.Category;

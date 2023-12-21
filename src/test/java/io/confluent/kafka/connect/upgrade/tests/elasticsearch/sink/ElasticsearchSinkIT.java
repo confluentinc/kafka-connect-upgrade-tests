@@ -5,9 +5,9 @@
 package io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink;
 
 
-import io.confluent.connect.test.framework.upgrade.annotations.TestPlugin;
-import io.confluent.connect.test.framework.upgrade.common.ConnectorIT;
-import io.confluent.connect.test.framework.upgrade.common.UpgradeConfig;
+import io.confluent.connect.test.sdk.upgrade.annotations.TestPlugin;
+import io.confluent.connect.test.sdk.upgrade.common.ConnectorIT;
+import io.confluent.connect.test.sdk.upgrade.common.UpgradeConfig;
 import io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper.ElasticsearchContainer;
 import io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper.ElasticsearchHelperClient;
 import io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper.ElasticsearchSinkConnectorConfig;

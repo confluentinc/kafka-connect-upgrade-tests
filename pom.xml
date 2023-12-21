@@ -51,11 +51,22 @@
 
     <test.containers.version>1.16.3</test.containers.version>
     <es.version>7.17.3</es.version>
-    <jetty.version>9.4.47.v20220610</jetty.version>
-    <jersey.version>2.36</jersey.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>io.confluent</groupId>
+      <artifactId>connect-test-sdk-upgrade</artifactId>
+      <version>0.1.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.confluent</groupId>
+      <artifactId>connect-test-sdk-common</artifactId>
+      <version>0.1.0</version>
+      <scope>test</scope>
+    </dependency>
+
     <dependency>
       <groupId>com.google.auto.service</groupId>
       <artifactId>auto-service</artifactId>
@@ -67,23 +78,20 @@
       <version>1.13.0</version>
     </dependency>
 
-    <!-- Dependencies Common !-->
-    <dependency>
-      <groupId>io.confluent</groupId>
-      <artifactId>connect-test-framework-upgrade</artifactId>
-      <version>0.1.5</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.confluent</groupId>
-      <artifactId>connect-test-framework-common</artifactId>
-      <version>0.1.5</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>confluent-hub-client</artifactId>
       <version>${confluent.hub.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.glassfish.jersey.inject</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -103,14 +111,6 @@
       <groupId>org.apache.kafka</groupId>
       <artifactId>connect-runtime</artifactId>
       <exclusions>
-        <exclusion>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-client</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.glassfish.jersey.containers</groupId>
-          <artifactId>jersey-container-servlet</artifactId>
-        </exclusion>
       </exclusions>
       <scope>test</scope>
     </dependency>
@@ -118,43 +118,11 @@
       <groupId>org.apache.kafka</groupId>
       <artifactId>connect-runtime</artifactId>
       <exclusions>
-        <exclusion>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-client</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.glassfish.jersey.containers</groupId>
-          <artifactId>jersey-container-servlet</artifactId>
-        </exclusion>
       </exclusions>
       <classifier>test</classifier>
       <type>test-jar</type>
       <scope>test</scope>
       <version>${kafka.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-server</artifactId>
-      <version>${jetty.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlet</artifactId>
-      <version>${jetty.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlets</artifactId>
-      <version>${jetty.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.glassfish.jersey.core</groupId>
-      <artifactId>jersey-client</artifactId>
-      <version>${jersey.version}</version>
     </dependency>
 
     <dependency>
