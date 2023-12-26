@@ -1,9 +1,0 @@
-name: kafka-connect-upgrade-tests
-lang: unknown
-lang_version: unknown
-git:
-  enable: true
-github:
-  enable: true
-codeowners:
-  enable: true
