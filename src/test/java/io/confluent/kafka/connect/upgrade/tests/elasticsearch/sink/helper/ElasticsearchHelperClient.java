@@ -1,11 +1,5 @@
 /*
- * Copyright [2023 - 2019] Confluent Inc.
- */
-
-package io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper;
-
-/*
- * Copyright 2020 Confluent Inc.
+ * Copyright 2023 Confluent Inc.
  *
  * Licensed under the Confluent Community License (the "License"); you may not use
  * this file except in compliance with the License.  You may obtain a copy of the
@@ -18,6 +12,9 @@ package io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper;
  * WARRANTIES OF ANY KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations under the License.
  */
+
+package io.confluent.kafka.connect.upgrade.tests.elasticsearch.sink.helper;
+
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch.indices.GetDataStreamRequest.Builder;

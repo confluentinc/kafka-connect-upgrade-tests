@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
 
     Copyright 2023 Confluent Inc.
@@ -15,11 +15,15 @@
     specific language governing permissions and limitations under the License.
 
 -->
-<!DOCTYPE suppressions PUBLIC
-        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
-        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
-
-<suppressions>
-
-
-</suppressions>
+<additionalHeaders>
+    <CONFLUENT_JAVA_STYLE>
+        <firstLine>/*</firstLine>
+        <beforeEachLine> * </beforeEachLine>
+        <endLine> */EOL</endLine>
+        <firstLineDetectionPattern>(\s|\t)*/\*.*$</firstLineDetectionPattern>
+        <lastLineDetectionPattern>.*\*/(\s|\t)*$</lastLineDetectionPattern>
+        <allowBlankLines>false</allowBlankLines>
+        <isMultiline>true</isMultiline>
+        <padLines>false</padLines>
+    </CONFLUENT_JAVA_STYLE>
+</additionalHeaders>
