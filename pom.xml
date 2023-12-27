@@ -246,7 +246,6 @@
             <exclude>.github/*</exclude>
             <exclude>LICENSE-ConfluentCommunity</exclude>
             <exclude>LICENSE</exclude>
-            <exclude>**/*.yml</exclude>
           </excludes>
           <mapping>
             <java>CONFLUENT_JAVA_STYLE</java>
