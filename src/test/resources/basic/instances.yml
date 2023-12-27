@@ -1,7 +1,3 @@
-#
-# Copyright [2023 - 2019] Confluent Inc.
-#
-
 instances:
   - name: elasticsearch
     dns:
