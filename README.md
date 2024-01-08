@@ -13,4 +13,4 @@ export CLONED_REPO_PATH=<connector-repo-path> #example: ~/repo/kafka-connect-ela
 ```shell
 mvn clean verify
 ```
-Upgrade IT will run for versions - Version that is being present in CLONED_REPO_PATH and its previously released version on confluent hub.
+Upgrade IT will run for versions - Version that is being present in CLONED_REPO_PATH and its previously released versions on confluent hub.
