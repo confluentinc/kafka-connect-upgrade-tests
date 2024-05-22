@@ -248,6 +248,9 @@
             <exclude>.github/*</exclude>
             <exclude>LICENSE-ConfluentCommunity</exclude>
             <exclude>LICENSE</exclude>
+            <exclude>.semaphore/**</exclude>
+            <exclude>service.yml</exclude>
+            <exclude>sonar-project.properties</exclude>
           </excludes>
           <mapping>
             <java>CONFLUENT_JAVA_STYLE</java>
