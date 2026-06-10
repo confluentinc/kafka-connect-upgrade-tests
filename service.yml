@@ -1,6 +1,6 @@
 name: kafka-connect-upgrade-tests
 lang: java
-lang_version: 8
+lang_version: "8"
 github:
   enable: true
   repo_name: confluentinc/kafka-connect-upgrade-tests
