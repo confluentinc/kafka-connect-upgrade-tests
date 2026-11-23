@@ -1,9 +1,6 @@
 name: kafka-connect-upgrade-tests
 lang: java
-lang_version: 8
-github:
-  enable: true
-  repo_name: confluentinc/kafka-connect-upgrade-tests
+lang_version: '8'
 git:
   enable: true
 codeowners:
@@ -12,8 +9,8 @@ semaphore:
   enable: true
   pipeline_type: cp
   cve_scan: true
-  extra_deploy_args: "-Pjenkins"
-  extra_build_args: "-Pjenkins"
+  extra_deploy_args: -Pjenkins
+  extra_build_args: -Pjenkins
   run_pint_merge: true
 code_artifact:
   enable: true
